@@ -105,4 +105,4 @@ for i in range(30):
 
 resultados_df = pd.DataFrame(df, columns=['Ejecucion', 'Best objective value', 'Time (s)', 'Convergence Iteration'])
 now = time.strftime("%Y-%m-%d_%H-%M-%S")
-resultados_df.to_csv(f"resultados_{now}.lsx", index=False)
+resultados_df.to_excel(f'resultados_{now}.xlsx', index=False)
